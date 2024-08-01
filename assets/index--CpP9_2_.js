@@ -252,6 +252,6 @@ Error generating stack: `+o.message+`
     //Añade los siguientes script:
     "scripts": {
       "predeploy": "npm run build",
-      "deploy": "gh-pages -d dist"
+      "deploy": "gh-pages -d docs"
     }
   `}}),s.jsx("li",{children:"Usa HashRouter en lugar de BrowserRouter (Ver RouteComponent de este mismo proyecto)"}),s.jsx("li",{children:"Ejecuta los comando npm run predeploy y a continuación npm run deploy"}),s.jsx("li",{children:"Copia la carpeta dist a la carpeta docs"}),s.jsx("li",{children:"Comitea los cambios y subelos al repositorio"}),s.jsx("li",{children:"Configura Github Pages para que apunte  a la rama correcta y a la ruta docs"})]})]});function zm(){return s.jsx(ym,{children:s.jsx(cm,{children:s.jsxs(ke,{path:"/",element:s.jsx(wm,{}),children:[s.jsx(ke,{index:!0,element:s.jsx(km,{})}),s.jsx(ke,{path:"/InstalaccionesNecesarias",element:s.jsx(Em,{})}),s.jsx(ke,{path:"/FirstApp",element:s.jsx(Cm,{})}),s.jsx(ke,{path:"/Babel",element:s.jsx(Pm,{})}),s.jsx(ke,{path:"/JavaScriptModerno",element:s.jsx(_m,{})}),s.jsx(ke,{path:"/Props",element:s.jsx(Nm,{})}),s.jsx(ke,{path:"/PropTypes",element:s.jsx(Rm,{})}),s.jsx(ke,{path:"/Hooks",element:s.jsx(Tm,{})}),s.jsx(ke,{path:"/GithubPages",element:s.jsx(Lm,{})}),s.jsx(ke,{path:"*",element:s.jsx(jm,{})})]})})})}uo.createRoot(document.getElementById("root")).render(s.jsx(Ra.StrictMode,{children:s.jsx(zm,{})}));
