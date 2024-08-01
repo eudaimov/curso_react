@@ -14,15 +14,15 @@ export default function RouteComponent() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Indice />}>
+        <Route path="./" element={<Indice />}>
           <Route index element={<Descripcion />} />
-          <Route path="/InstalaccionesNecesarias" element={<InstalaccionesNecesarias />} />
-          <Route path="/FirstApp" element={<FirstApp />} />
-          <Route path="/Babel" element={<Babel />} />
-          <Route path="/JavaScriptModerno" element={<JavaScriptModerno />} />
-          <Route path="/Props" element={<Props />} />
-          <Route path="/PropTypes" element={<PropTypes />} />
-          <Route path="/Hooks" element={<Hooks />} />
+          <Route path="./InstalaccionesNecesarias" element={<InstalaccionesNecesarias />} />
+          <Route path="./FirstApp" element={<FirstApp />} />
+          <Route path="./Babel" element={<Babel />} />
+          <Route path="./JavaScriptModerno" element={<JavaScriptModerno />} />
+          <Route path="./Props" element={<Props />} />
+          <Route path="./PropTypes" element={<PropTypes />} />
+          <Route path="./Hooks" element={<Hooks />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
