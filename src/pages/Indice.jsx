@@ -66,6 +66,11 @@ const Indice = () => {
               Hooks
             </Link>
           </li>
+          <li>
+            <Link to="/GithubPages" onClick={() => changeTitulo("GitHub Pages")}>
+              GitHub Pages
+            </Link>
+          </li>
         </ul>
         <div className="w-100 text-center">{myRuta}</div>
       </nav>
