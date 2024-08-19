@@ -2,32 +2,38 @@ import {useState} from "react";
 
 const UseState = () => {
   let useStateImport = `
-    import { useState } from "react";
-  `;
-  const useStateUso= `
-      import {useState} from "react";
-      const UseHook=()=>{
-      const [color, setColor] = useState("rojo");
-      
+    import {useState} from "react";
+    
+    const UseHook=()=>{
+      const [color, setColor] = useState("");
+      let claseColor ='bg-white';
+      switch (color){
+        case 'rojo':
+          claseColor='bg-red';
+          break;
+        case 'verde':
+          claseColor='bg-green';
+          break;
+      }
       const seleccionarColor = (colorElejido)=>{
-        setColor(colorElejido)
+        setColor(colorElejido);
       }
       return (
-      <>
-              <p>¿Cual es tu color favorito?</p>
-              <div>
-                <button className="bg-green" onClick={() => {
-                  seleccionarColor("Verde")
-                }}>Verde</button>
-                <button className="bg-red" onClick={() => {
-                seleccionarColor("Rojo")
-                }}>Rojo</button>
-              </div>
-              <p className={color==="Rojo"? 'bg-red':'bg-green'}>Mi color favorito es:{color} </p>
-            </>
-        )
-      }
-      export default UseHook;
+        <>
+            <p>¿Cual es tu color favorito?</p>
+            <div>
+          <button className="bg-green" onClick={() => {
+            seleccionarColor("verde")
+          }}>Verde</button>
+          <button className="bg-red" onClick={() => {
+            seleccionarColor("rojo")
+          }}>Rojo</button>
+            </div>
+            <p className={claseColor}>Mi color favorito es: {color} </p>
+          </>
+      )
+    }
+    export default UseHook;
   `;
   return (
     <>
@@ -35,7 +41,7 @@ const UseState = () => {
       <h2>Introducción</h2>
       <section>
         <p>
-          Es el Hook más básico. Nos permite hacer un seguimiento sobre el estado de un Funtional
+          Es el Hook más básico. Nos permite hacer un seguimiento sobre el estado de un Functional
           Component de React.</p>
         <p>
           En este contexto estado es entendido como a las propiedad y funciones de un componente. Para
