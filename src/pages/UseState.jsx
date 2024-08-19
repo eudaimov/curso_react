@@ -1,9 +1,8 @@
-import {useState} from "react";
-
 const UseState = () => {
   let useStateImport = `
     import {useState} from "react";
-    
+    `
+  let useStateUso = `
     const UseHook=()=>{
       const [color, setColor] = useState("");
       let claseColor ='bg-white';
@@ -19,18 +18,18 @@ const UseState = () => {
         setColor(colorElejido);
       }
       return (
-        <>
-            <p>¿Cual es tu color favorito?</p>
-            <div>
-          <button className="bg-green" onClick={() => {
+        &lt;&gt;
+            &lt;p&gt;¿Cual es tu color favorito?&lt;/p&gt;
+            &lt;div&gt;
+          &lt;button className="bg-green" onClick={() =&gt; {
             seleccionarColor("verde")
-          }}>Verde</button>
-          <button className="bg-red" onClick={() => {
+          }}&gt;Verde&lt;/button&gt;
+          &lt;button className="bg-red" onClick={() =&gt; {
             seleccionarColor("rojo")
-          }}>Rojo</button>
-            </div>
-            <p className={claseColor}>Mi color favorito es: {color} </p>
-          </>
+          }}&gt;Rojo&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;p className={claseColor}&gt;Mi color favorito es: {color} &lt;/p&gt;
+          &lt;/&gt;
       )
     }
     export default UseHook;
