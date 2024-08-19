@@ -67,6 +67,11 @@ const Indice = () => {
             </Link>
           </li>
           <li>
+            <Link to="/UseState" onClick={() => changeTitulo("Use State")}>
+              Use State
+            </Link>
+          </li>
+          <li>
             <Link to="/GithubPages" onClick={() => changeTitulo("GitHub Pages")}>
               GitHub Pages
             </Link>

@@ -1,5 +1,5 @@
-const GitHubPages= ()=>{
-  const ghpages= `
+const GitHubPages = () => {
+  const ghpages = `
     npm install gh-pages --save-dev
 
   `;
@@ -11,7 +11,7 @@ const GitHubPages= ()=>{
       "deploy": "gh-pages -d docs"
     }
   `;
-  const configuracionVite=`
+  const configuracionVite = `
     export default defineConfig({
       plugins: [react()],
       build: {
@@ -21,23 +21,27 @@ const GitHubPages= ()=>{
     })
   `;
   return (
-        <>
-            <h1>Pasos necesarios para publicar en GitHub Pages</h1>
-          <ol>
-            <li>Instalar gh-pages</li>
-             <pre className="code" dangerouslySetInnerHTML={{ __html: ghpages }}></pre>
-            <li>Configura tu package.json</li>
-             <pre className="code" dangerouslySetInnerHTML={{ __html: packageJson }}></pre>
-            <li>Usa HashRouter en lugar de BrowserRouter (Ver RouteComponent de este mismo proyecto)</li>
-            <li>Si estas utilizando vite cambia la configuración de la carpeta de salida añadiendo en el archivo vite.config.js:</li>
-               <pre className="code" dangerouslySetInnerHTML={{ __html: configuracionVite }}></pre>
-            <li>Ejecuta los comando npm run predeploy y a continuación npm run deploy</li>
-            <li>Copia la carpeta dist a la carpeta docs</li>
-            <li>Comitea los cambios y subelos al repositorio</li>
-            <li>Configura Github Pages para que apunte  a la rama correcta y a la ruta docs</li>
-
-          </ol>
-        </>
-    )
-}
+    <>
+      <h1>Pasos necesarios para publicar en GitHub Pages</h1>
+      <ol>
+        <li>Instalar gh-pages</li>
+        <pre className="code" dangerouslySetInnerHTML={{ __html: ghpages }}></pre>
+        <li>Configura tu package.json</li>
+        <pre className="code" dangerouslySetInnerHTML={{ __html: packageJson }}></pre>
+        <li>
+          Usa HashRouter en lugar de BrowserRouter (Ver RouteComponent de este mismo proyecto)
+        </li>
+        <li>
+          Si estas utilizando vite cambia la configuración de la carpeta de salida añadiendo en el
+          archivo vite.config.js:
+        </li>
+        <pre className="code" dangerouslySetInnerHTML={{ __html: configuracionVite }}></pre>
+        <li>Ejecuta los comando <code>npm run predeploy</code> y a continuación <code>npm run deploy</code></li>
+        <li>Copia la carpeta dist a la carpeta docs</li>
+        <li>Comitea los cambios y súbelos al repositorio</li>
+        <li>Configura Github Pages para que apunte a la rama correcta y a la ruta docs</li>
+      </ol>
+    </>
+  );
+};
 export default GitHubPages;
