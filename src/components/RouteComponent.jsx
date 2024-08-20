@@ -11,6 +11,10 @@ import PropTypes from "../pages/PropTypes.jsx";
 import Hooks from "../pages/Hooks.jsx";
 import GitHubPages from "../pages/GithubPages.jsx";
 import UseState from "../pages/UseState.jsx";
+import UseEffect from "../pages/UseEffect.jsx";
+import UseContext from "../pages/UseContext.jsx";
+import UseReducer from "../pages/UseReducer.jsx";
+import UseRef from "../pages/useRef.jsx";
 
 export default function RouteComponent() {
   return (
@@ -26,6 +30,10 @@ export default function RouteComponent() {
           <Route path="/PropTypes" element={<PropTypes />} />
           <Route path="/Hooks" element={<Hooks />} />
           <Route path="/UseState" element={<UseState />} />
+          <Route path="/UseEffect" element={<UseEffect />} />
+          <Route path="/UseContext" element={<UseContext />} />
+          <Route path="/UseReducer" element={<UseReducer />} />
+          <Route path="/UseRef" element={<UseRef />} />
           <Route path="/GithubPages" element={<GitHubPages />} />
           <Route path="*" element={<NoPage />} />
         </Route>

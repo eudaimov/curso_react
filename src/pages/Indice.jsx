@@ -12,8 +12,8 @@ const Indice = () => {
   };
   
   const abrirMenu= () =>{
-    document.getElementById("listaMenu").classList.toggle("d-flex");
-    document.getElementById("listaMenu").classList.toggle("d-none");
+    document.getElementById("listaMenu").classList.toggle("aparecerMenu");
+    document.getElementById("listaMenu").classList.toggle("ocultarMenu");
   }
   
   return (
@@ -22,7 +22,7 @@ const Indice = () => {
         <div id="botonMenu" onClick={abrirMenu}>
           <i className="fa-solid fa-house fa-xl"></i>
         </div>
-        <ul id="listaMenu" className="d-none flex-column no-decoration-list">
+        <ul id="listaMenu" className="d-flex flex-column no-decoration-list ocultarMenu">
           <li>
             <Link to="/" onClick={() => changeTitulo("Descripción")}>
               Historia y descripción
@@ -67,10 +67,31 @@ const Indice = () => {
             </Link>
           </li>
           <li>
-            <Link to="/UseState" onClick={() => changeTitulo("Use State")}>
-              Use State
+            <Link to="/UseState" onClick={() => changeTitulo("UseState")}>
+              UseState
             </Link>
           </li>
+          <li>
+            <Link to="/UseEffect" onClick={() => changeTitulo("UseEffect")}>
+              UseEffect
+            </Link>
+          </li>
+          <li>
+            <Link to="/UseContext" onClick={() => changeTitulo("UseContext")}>
+              UseContext
+            </Link>
+          </li>
+          <li>
+            <Link to="/UseReducer" onClick={() => changeTitulo("UseReducer")}>
+              UseReducer
+            </Link>
+          </li>
+          <li>
+            <Link to="/UseRef" onClick={() => changeTitulo("UseRef")}>
+              UseRef
+            </Link>
+          </li>
+
           <li>
             <Link to="/GithubPages" onClick={() => changeTitulo("GitHub Pages")}>
               GitHub Pages

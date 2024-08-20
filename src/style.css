@@ -49,3 +49,11 @@ a{
         cursor: pointer;
     }
 }
+.ocultarMenu{
+  transform: translateX(-100%);
+  transition: transform .3s;
+}
+.aparecerMenu{
+  transform: translateX(0);
+  transition: transform .3s;
+}
