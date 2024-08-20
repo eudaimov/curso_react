@@ -38,7 +38,9 @@ const GitHubPages = () => {
         <pre className="code" dangerouslySetInnerHTML={{ __html: configuracionVite }}></pre>
         <li>Ejecuta los comando <code>npm run predeploy</code> y a continuación <code>npm run deploy</code></li>
         <li>Copia la carpeta dist a la carpeta docs</li>
-        <li>Comitea los cambios y súbelos al repositorio</li>
+        <li>Modifica en la página index de la carpeta docs los src y href de los script y los link con un .(punto) delante</li>
+        <li>Elimina el modo  &lt;React.StrictMode&gt;</li>
+        <li>Guarda los cambios(Commit) y súbelos al repositorio(Push)</li>
         <li>Configura Github Pages para que apunte a la rama correcta y a la ruta docs</li>
       </ol>
     </>
