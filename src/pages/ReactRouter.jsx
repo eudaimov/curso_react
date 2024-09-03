@@ -31,7 +31,7 @@ const ReactRouter= ()=>{
         <p>El switch es el núcleo principal del enrutamiento. Las rutas coinciden con las rutas
           URLs</p>
         <p>Los parámetros de ruta se marcan con dos puntos :id</p>
-        <p>Hay un estrictos </p>
+        <p>Hay un estrictos orden de prioridad que irá desde el menos específico al mas específico. </p>
         <p>Para su uso es necesario la importación de la librería necesaria:</p>
         <pre className="code" dangerouslySetInnerHTML={{__html: codigoEjemplo1}}></pre>
 
