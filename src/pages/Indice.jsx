@@ -97,6 +97,11 @@ const Indice = () => {
               GitHub Pages
             </Link>
           </li>
+          <li>
+            <Link to="/ReactRouter" onClick={() => changeTitulo("React Router")}>
+              ReactRouter
+            </Link>
+          </li>
         </ul>
         <div className="w-100 text-center">{myRuta}</div>
       </nav>

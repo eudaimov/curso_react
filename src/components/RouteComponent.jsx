@@ -15,28 +15,30 @@ import UseEffect from "../pages/UseEffect.jsx";
 import UseContext from "../pages/UseContext.jsx";
 import UseReducer from "../pages/UseReducer.jsx";
 import UseRef from "../pages/useRef.jsx";
+import ReactRouter from "../pages/ReactRouter.jsx";
 
 export default function RouteComponent() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<Indice />}>
-          <Route index element={<Descripcion />} />
-          <Route path="/InstalaccionesNecesarias" element={<InstalaccionesNecesarias />} />
-          <Route path="/FirstApp" element={<FirstApp />} />
-          <Route path="/Babel" element={<Babel />} />
-          <Route path="/JavaScriptModerno" element={<JavaScriptModerno />} />
-          <Route path="/Props" element={<Props />} />
-          <Route path="/PropTypes" element={<PropTypes />} />
-          <Route path="/Hooks" element={<Hooks />} />
-          <Route path="/UseState" element={<UseState />} />
-          <Route path="/UseEffect" element={<UseEffect />} />
-          <Route path="/UseContext" element={<UseContext />} />
-          <Route path="/UseReducer" element={<UseReducer />} />
-          <Route path="/UseRef" element={<UseRef />} />
-          <Route path="/GithubPages" element={<GitHubPages />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
+          <Route path="/" element={<Indice />}>
+            <Route index element={<Descripcion />} />
+            <Route path="/InstalaccionesNecesarias" element={<InstalaccionesNecesarias />} />
+            <Route path="/FirstApp" element={<FirstApp />} />
+            <Route path="/Babel" element={<Babel />} />
+            <Route path="/JavaScriptModerno" element={<JavaScriptModerno />} />
+            <Route path="/Props" element={<Props />} />
+            <Route path="/PropTypes" element={<PropTypes />} />
+            <Route path="/Hooks" element={<Hooks />} />
+            <Route path="/UseState" element={<UseState />} />
+            <Route path="/UseEffect" element={<UseEffect />} />
+            <Route path="/UseContext" element={<UseContext />} />
+            <Route path="/UseReducer" element={<UseReducer />} />
+            <Route path="/UseRef" element={<UseRef />} />
+            <Route path="/GithubPages" element={<GitHubPages />} />
+            <Route path="/ReactRouter" element={<ReactRouter />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
       </Routes>
     </HashRouter>
   );
